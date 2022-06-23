@@ -1,0 +1,24 @@
+.header__menu{}
+
+@media(max-width:1050px) {
+    .header__menu{
+        display: none;
+    }
+}
+.menu{
+    width: 522px;
+}
+.menu__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item{
+    padding-top: 3px;
+}
+.menu__link{
+    color: white;
+    font-size: 16px;
+    font-family: 'Epilogue', sans-serif;
+
+}

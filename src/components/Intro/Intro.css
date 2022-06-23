@@ -1,0 +1,27 @@
+.intro{
+    height: 320px;
+    background-color: #28293E;
+    color: white;
+
+}
+
+.intro .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 34px;
+    text-align: center;
+}
+
+
+.intro__title{
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 400;
+
+}
+.intro__text{
+    max-width: 570px;
+}

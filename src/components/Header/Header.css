@@ -1,0 +1,50 @@
+
+
+.header{
+    padding: 16.5px 0;
+    background-color: #28293E;
+    color: white;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo span{
+    padding-top: 9px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.button{
+    width: 138px;
+    padding: 16px 0 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #676877;
+    background-color: #28293E;
+    color: white;
+    text-transform:uppercase;
+    font-weight: black;
+}
+
+@media(max-width:1050px) {
+    .header .container{
+        justify-content: center;
+
+    }
+    .header__button{
+        display: none;
+    }
+    
+}
+

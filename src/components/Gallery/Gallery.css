@@ -1,0 +1,162 @@
+
+.gallery{
+    padding: 80px 0 100px 0;
+    background-color: #FDF0E9;
+}
+
+@media (min-width: 1600px){
+    .gallery .container{
+        max-width: 1560px;
+    }
+}
+
+
+/* Section works */
+.gallery__works{} 
+.works{
+
+    padding-top: 45px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.works__block{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 32px;
+
+}
+.work{
+    position: relative;
+    width: 370px;
+    height: 416px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    border: 0px;
+}
+
+@media(max-width: 1040px){
+    .work{
+        width: 330px;
+    }
+}
+.work.hidden{
+    display: none;
+}
+
+.work.mark{
+    border: 7px solid #4FE24A;
+}
+.work__info{
+    position: absolute;
+    left: 48px;
+    bottom: 53px;
+
+}
+.work__category{
+    margin-bottom: 16px;
+    padding: 9px 18px 8px 18px;
+    background-color: white;
+    color: #391400;
+    border-radius: 19px;
+    cursor: pointer;
+
+}
+
+.work__name{
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+    font-weight: 500;
+}
+.work__picture{
+    width: 100%;
+    height: 100%;
+}
+
+.work__more_btn{
+    width: 170px;
+    background-color:white;
+    color: #391400;
+    box-shadow: 0 3px 9px #391400;
+    margin: 0 auto;
+    padding: 16px 0 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #676877;
+    text-transform:uppercase;
+}
+
+/* Section works */
+
+
+/* filter  */
+
+.gallery__filters{
+    margin: 0 auto 35px auto;
+
+} 
+.filters{
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    color: #7F6454;
+}
+
+.select__wrap{
+    display: none;
+    position: relative;
+    width: fit-content;
+}
+
+@media (max-width: 1050px) {
+    .filters{
+        display: none;
+    }
+    .select__wrap{
+        display: block;
+    }
+}
+.select__wrap::after{
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    right: 14px;
+    top: 35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #ef6c58 transparent transparent transparent;
+}
+.select{
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+    appearance: none;
+    border-radius:6px;
+    outline: none;
+    color: #391400;
+    background-color:#fff;
+    width: 329px;
+    height: 76px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 16px;
+    padding-left: 16px;
+    border: 1px solid #F3D1BF;
+}
+.filter{
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.filter.selected{
+    color: #16CD53;
+
+}
+
+/* filter   */
