@@ -37,7 +37,7 @@
     border: 0px;
 }
 
-@media(max-width: 1040px){
+@media(max-width: 1050px){
     .work{
         width: 330px;
     }
@@ -48,6 +48,11 @@
 
 .work.mark{
     border: 7px solid #4FE24A;
+}
+@media(max-width: 1050px){
+    .work.mark{
+        border: none;
+    }
 }
 .work__info{
     position: absolute;
